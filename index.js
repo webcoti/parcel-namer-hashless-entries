@@ -9,6 +9,11 @@ function buildNameWithoutHash(bundle, oldName) {
 
   const pieces = oldName.split('.')
   pieces.splice(pieces.length - 2, 1)
+
+  const { outputFormat } = bundle.env
+  if (outputFormat !== 'esmodule') {
+    pieces.splice(pieces.length - 1, 0, outputFormat)
+  }
   return pieces.join('.')
 }
 
