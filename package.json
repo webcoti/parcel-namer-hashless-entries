@@ -1,0 +1,38 @@
+{
+  "name": "@webcoti/parcel-namer-hashless-entries",
+  "version": "0.0.1",
+  "keywords": [
+    "parcel-namer"
+  ],
+  "repository": "webcoti/parcel-namer-hashless-entries",
+  "license": "MIT",
+  "author": "Fabiano Nunes Parente",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "release": "np"
+  },
+  "prettier": "@webcoti/prettier-config",
+  "eslintConfig": {
+    "extends": "@webcoti/eslint-config"
+  },
+  "dependencies": {
+    "@parcel/namer-default": "^2.8.3",
+    "@parcel/plugin": "^2.8.3"
+  },
+  "devDependencies": {
+    "@webcoti/eslint-config": "^1.8.0",
+    "@webcoti/prettier-config": "^1.6.0",
+    "eslint": "^8.34.0",
+    "np": "^7.6.3",
+    "prettier": "^2.8.4"
+  },
+  "engines": {
+    "parcel": "2.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
