@@ -11,7 +11,7 @@ function buildNameWithoutHash(bundle, oldName) {
   pieces.splice(pieces.length - 2, 1)
 
   const { outputFormat } = bundle.env
-  if (outputFormat !== 'esmodule') {
+  if (bundle.type === 'js' && outputFormat !== 'esmodule') {
     pieces.splice(pieces.length - 1, 0, outputFormat)
   }
   return pieces.join('.')
